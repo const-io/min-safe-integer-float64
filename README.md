@@ -1,4 +1,4 @@
-const-min-safe-integer
+Min Safe Integer
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,37 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-const-min-safe-integer' );
+var MIN_SAFE_INTEGER = require( 'compute-const-min-safe-integer' );
 ```
 
-#### foo( arr )
+#### MIN_SAFE_INTEGER
 
-What does this function do?
+The minimum [safe](http://www.2ality.com/2013/10/safe-integers.html) double-precision floating-point integer.
+
+``` javascript
+MIN_SAFE_INTEGER === -1 * Math.pow( 2, 53 ) + 1; // -9007199254740991
+```
+
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-const-min-safe-integer' );
+var MIN_SAFE_INTEGER = require( 'compute-const-min-safe-integer' );
+
+var min = -Math.pow( 2, 55 ),
+	len = 100,
+	val,
+	i;
+
+for ( i = 0; i < len; i++ ) {
+	val = Math.round( Math.random() * min );
+	if ( val < MIN_SAFE_INTEGER ) {
+		console.log( 'Unsafe: %d', val );
+	} else {
+		console.log( 'Safe: %d', val );
+	}
+}
 ```
 
 To run the example code from the top-level application directory,
