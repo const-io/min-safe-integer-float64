@@ -1,6 +1,6 @@
 {
   "name": "const-min-safe-integer-float64",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minimum safe double-precision floating-point integer.",
   "author": {
     "name": "Athan Reines",
