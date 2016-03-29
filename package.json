@@ -23,7 +23,7 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/const-io/min-safe-integer.git"
+    "url": "git://github.com/const-io/min-safe-integer-float64.git"
   },
   "keywords": [
     "const.io",
@@ -45,7 +45,7 @@
     "float64"
   ],
   "bugs": {
-    "url": "https://github.com/const-io/min-safe-integer/issues"
+    "url": "https://github.com/const-io/min-safe-integer-float64/issues"
   },
   "dependencies": {},
   "devDependencies": {
