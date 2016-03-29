@@ -8,14 +8,14 @@ MIN SAFE INTEGER
 ## Installation
 
 ``` bash
-$ npm install compute-const-min-safe-integer
+$ npm install const-min-safe-integer-float64
 ```
 
 
 ## Usage
 
 ``` javascript
-var MIN_SAFE_INTEGER = require( 'compute-const-min-safe-integer' );
+var MIN_SAFE_INTEGER = require( 'const-min-safe-integer-float64' );
 ```
 
 #### MIN_SAFE_INTEGER
@@ -32,7 +32,7 @@ MIN_SAFE_INTEGER === (-1*Math.pow(2,53) + 1); // -9007199254740991
 ``` javascript
 var round = require( 'math-round' );
 var pow = require( 'math-power' );
-var MIN_SAFE_INTEGER = require( 'compute-const-min-safe-integer' );
+var MIN_SAFE_INTEGER = require( 'const-min-safe-integer-float64' );
 
 var min;
 var x;
@@ -113,8 +113,8 @@ $ make view-browser-tests
 Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/compute-const-min-safe-integer.svg
-[npm-url]: https://npmjs.org/package/compute-const-min-safe-integer
+[npm-image]: http://img.shields.io/npm/v/const-min-safe-integer-float64.svg
+[npm-url]: https://npmjs.org/package/const-min-safe-integer-float64
 
 [build-image]: http://img.shields.io/travis/const-io/min-safe-integer-float64/master.svg
 [build-url]: https://travis-ci.org/const-io/min-safe-integer-float64

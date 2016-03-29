@@ -1,5 +1,5 @@
 {
-  "name": "compute-const-min-safe-integer",
+  "name": "const-min-safe-integer-float64",
   "version": "1.0.1",
   "description": "Minimum safe double-precision floating-point integer.",
   "author": {
